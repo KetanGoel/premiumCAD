@@ -19,7 +19,172 @@
       display: block; /* Display the mobile image on mobile screens */
   }
 }
+
+
+nav {
+  text-decoration: none;
+  list-style: none;
+  height: 85px;
+  width: 100%;
+  background: #d95a31;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+label.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  padding: 0 100px;
+  line-height: 80px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 40px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+  text-decoration: none;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+a.active,a:hover {
+  color: white; 
+  position: relative;
+  text-decoration: none !important;
+  transition: .5s;
+}
+
+a.active::after,
+nav a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -4px; /* Adjust the distance of the underline from text */
+  left: 0;
+  width: 100%;
+  height: 4px; /* Adjust the thickness of the underline */
+  background-color: #483285; /* Set the color of the underline */
+  transition: .5s;
+}
+
+/* Optional: Change the underline color on hover */
+nav a:hover::after {
+  background-color:#483285; /* Change to your desired hover color */
+}
+
+nav #icon {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  z-index: 101;
+}
+
+@media (max-width: 1048px) {
+  label.logo{
+    font-size: 32px;
+    padding-left: 60px;
+  } 
+  nav ul {
+    margin-right: 20px;
+
+  }
+  nav a{
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1300px) {
+  nav #icon {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2f3640;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav a{
+    font-size: 20px;
+  }
+  a.active,a:hover {
+    border: none;
+    color: #3498db;
+
+  }
+  nav ul.show{
+    left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  label.logo{
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  nav ul{
+    margin-right: 10px;
+  }
+  nav a{
+    font-size: 14px;
+  }
+}
+.logo .original-logo {
+  display: inline-block;
+}
+
+/* Hide the alternate logo by default */
+.logo .alternate-logo {
+  display: none;
+  max-height: 60px;
+}
+
+@media (max-width: 500px) {
+  .logo img.original-logo {
+    display: none; /* Hide the original logo */
+  }
+
+  .logo img.alternate-logo {
+    display: inline-block; /* Display the alternate logo */
+  }
+}
+
+
+
 /******* Content SECTION *******/
+.pathwaysbanner{
+  background-size: cover;
+  background-position: center center;
+  height: 40vh;
+  width: 100%;
+  background-image: url(../images/pathways/process.jpg);
+}
+
 
 #quality-intro {
     padding: 50px 0px;
@@ -297,6 +462,16 @@
   .contactus .box .map {
     min-height: 300px;
     padding: 0px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  #getintouch{
+    padding: 0;
+  }
+  .contactus .box .contact{
+    padding: 0;
   }
 }
 /******* CONTACT-US SECTION END *******/

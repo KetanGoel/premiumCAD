@@ -12,25 +12,43 @@
     <!-- Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <title>Pathways | PremiumCAD</title>
 </head>
+<script>
+  $(document).ready(function() {
+    $('#icon').click(function(){
+      $('ul').toggleClass('show');
+    })
+  })
+</script>
 <body>
-  <!-- Baanner -->
-  <!-- Banner -->
-  <div class="container-fluid p-0">
-    <div class="row">
-        <div class="col-12">
-            <div class="banner-container">
-                <!-- Desktop Image -->
-                <img src="images/pathways/process.jpg" class="img-fluid d-none d-md-block" alt="Desktop Banner Image">
 
-                <!-- Mobile Image -->
-                <img src="images/pathways/mobile.jpg" class="img-fluid d-md-none" alt="Mobile Banner Image">
-            </div>
-        </div>
-    </div>
-  </div>
+  <nav>
+    <label class="logo">
+      <img class="original-logo" src="images/Logo.jpg" alt="PremiumCAD">
+      <img class="alternate-logo" src="images/sq_logo.ico" alt="PremiumCAD">
+    </label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a class="active">Pathways</a></li>
+      <li><a href="blog.html">Premium Blog</a></li>
+      <li><a href="#getintouch">Contact Us</a></li>
+    </ul>
+    <label id="icon">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+  </nav>
+
+
+  <!-- Baanner -->
+  <section class="pathwaysbanner"></section>
   <!-- End Banner -->
 
   <!-- End banner -->
@@ -43,7 +61,7 @@
 
   <!-- quality intro -->
   <section id="quality-intro" class="quality-intro">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
           <div class="row gx-0">
               <div class="col-lg-6 d-flex flex-column justify-content-center">
                   <div class="content">

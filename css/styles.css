@@ -123,6 +123,198 @@
   }
 }
 
+@media (min-width: 768px) {
+  /* Styles for screens wider than 700px */
+  .imgBx img {
+    display: block;
+  }
+  
+  .imgBx .image-text {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  /* Hide the image on screens less than 700px wide */
+  .imgBx img {
+    display: none;
+  }
+  
+  /* Display the text on screens less than 700px wide */
+  .imgBx .image-text {
+    display: block;
+    padding-top: 70px;
+    font-size: larger;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 10px; /* Adjust spacing as needed */
+    color: #333; /* Set the text color */
+  }
+  .close {
+    top: 10px; /* Adjust the top position as needed to keep it inside the dialog */
+    right: 10px; /* Adjust the right position as needed to keep it inside the dialog */
+    background: #fff;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-position: center;
+  }
+
+}
+
+
+
+nav {
+  text-decoration: none;
+  list-style: none;
+  height: 85px;
+  width: 100%;
+  background: #d95a31;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+label.logo {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+  padding: 0 100px;
+  line-height: 80px;
+}
+
+nav ul{
+  float: right;
+  margin-right: 40px;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+  text-decoration: none;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 7px 10px;
+  border-radius: 3px;
+}
+
+a.active,a:hover {
+  color: white; 
+  position: relative;
+  text-decoration: none !important;
+  transition: .5s;
+}
+
+a.active::after,
+nav a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: -4px; /* Adjust the distance of the underline from text */
+  left: 0;
+  width: 100%;
+  height: 4px; /* Adjust the thickness of the underline */
+  background-color: #483285; /* Set the color of the underline */
+  transition: .5s;
+}
+
+/* Optional: Change the underline color on hover */
+nav a:hover::after {
+  background-color:#483285; /* Change to your desired hover color */
+}
+
+nav #icon {
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+  z-index: 101;
+}
+
+@media (max-width: 1048px) {
+  label.logo{
+    font-size: 32px;
+    padding-left: 60px;
+  } 
+  nav ul {
+    margin-right: 20px;
+
+  }
+  nav a{
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 1300px) {
+  nav #icon {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2f3640;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav a{
+    font-size: 20px;
+  }
+  a.active,a:hover {
+    border: none;
+    color: #3498db;
+
+  }
+  nav ul.show{
+    left: 0;
+  }
+}
+
+@media (max-width: 400px) {
+  label.logo{
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  nav ul{
+    margin-right: 10px;
+  }
+  nav a{
+    font-size: 14px;
+  }
+}
+.logo .original-logo {
+  display: inline-block;
+}
+
+/* Hide the alternate logo by default */
+.logo .alternate-logo {
+  display: none;
+  max-height: 60px;
+}
+
+@media (max-width: 500px) {
+  .logo img.original-logo {
+    display: none; /* Hide the original logo */
+  }
+
+  .logo img.alternate-logo {
+    display: inline-block; /* Display the alternate logo */
+  }
+}
+
 /* Home page */
 
 *{
@@ -156,101 +348,138 @@ section {
     color: #d95a31;
 }
 
-
-
-
-
 /******* BANNER SECTION *******/
 #hero {
-    width: 100%;
-    height: 100vh;
-    background: url(../images/homepage_edited.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-#hero .container {
-    padding-bottom: 150px;
+  top: 0;
+  padding: 0;
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: url(../images/homepage_edited.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #hero h1 {
-    font-size: 65px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    line-height: 56px;
-    color: #000;
-    margin: 0 0 10px 0;
+  padding-top: 80px;
+  font-size: 65px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  line-height: 56px;
+  color: #000;
+}
+
+#hero h2{
+  padding-top: 20px;
+  font-size: 60px;
+  color: #000;
+  margin-top: 20px;
+}
+
+#hero .btn{
+  margin-top: 20px;
+  background-color: #d95a31;
+  border: none;
+}
+
+#hero .btn:hover{
+  background-color: #483285;
 }
 
 #hero ul {
-    font-family: 'raleway', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .animated-txt .static-txt {
-    color: #000;
-    font-size: 48px;
-    font-weight: 500;
+  color: #000;
+  font-size: 48px;
+  font-weight: 500;
 }
 
 .animated-txt .dynamic-txts {
-    margin-left: 15px;
-    line-height: 90px;
-    height: 90px;
-    overflow: hidden;
-
+  margin-left: 15px;
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
 }
 
 .dynamic-txts li {
-    list-style: none;
-    color: #ffa500;
-    font-size: 48px;
-    font-weight: 600;
-    top: 0;
-    position: relative;
-    animation: slide 12s steps(4)
-    infinite;
+  list-style: none;
+  color: #ffa500;
+  font-size: 48px;
+  font-weight: 600;
+  top: 0;
+  position: relative;
+  animation: slide 12s steps(4)
+  infinite;
 }
 
 @keyframes slide {
-    100% {
-        top: -360px;
-    }
+  100% {
+      top: -360px;
+  }
 }
 
 .dynamic-txts li {
-    position: relative;
-
+  position: relative;
 }
 
 .dynamic-txts li::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #fff;
-    border-left: 2px solid #ffa500;
-    animation: typing 3s steps(15)
-    infinite;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  border-left: 2px solid #ffa500;
+  animation: typing 3s steps(15)
+  infinite;
 }
 
 @keyframes typing {
-    40%,
-    60% {
-        left: calc(35% + 30px);
-    }
-    100% {
-        left: 0;
-    }
+  40%,
+  60% {
+      left: calc(35% + 30px);
+  }
+  100% {
+      left: 0;
+  }
 }
 
 
 #banner-img {
-    position: absolute;
-    background-size: cover;
+  position: absolute;
+  background-size: cover;
 }
+
+@media (max-width: 1000px) {
+  #hero .orange-text{
+    color: #000;
+  }
+}
+
+@media (max-width: 460px) {
+  #hero h1 {
+    padding-top: 80px;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 50px;
+    color: #000;
+  }
+  
+  #hero h2{
+    padding-top: 20px;
+    font-size: 30px;
+    color: #000;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+}
+
+
+
 /******* BANNER SECTION END*******/
 
 
@@ -306,6 +535,29 @@ section {
 
 .about .btn-read-more:hover i {
   transform: translateX(5px);
+}
+
+.btn-read-more span::before {
+  content: "Know more about us"; /* Initial text for larger screens */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 700px) {
+  .btn-read-more span::before {
+    content: "Explore"; /* Text for smaller screens */
+  }
+  .about p{
+    text-align: center;
+  }
+  .about h2{
+    font-size: 19px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .about .content{
+    padding: 0;
+    padding-bottom: 10px;
+  }
 }
 /******* ABOUT US SECTION END *******/
 
@@ -649,6 +901,12 @@ section {
   text-align: left;
   font-size: 17px;
 }
+
+@media (max-width: 700px) {
+  .why-us .sub-heading{
+    font-size: 50px;
+  }
+}
 /******* WHY-US SECTION END *******/
 
 
@@ -843,6 +1101,15 @@ section {
   .contactus .box .map {
     min-height: 300px;
     padding: 0px;
+  }
+}
+
+@media (max-width: 400px) {
+  #getintouch{
+    padding: 0;
+  }
+  .contactus .box .contact{
+    padding: 0;
   }
 }
 /******* CONTACT-US SECTION END *******/

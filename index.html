@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -16,8 +14,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" 
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
     <!-- FAVICON -->
@@ -30,23 +27,42 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-
-    
-
     <title>Home | PremiumCAD</title>
+    <script>
+      $(document).ready(function() {
+        $('#icon').click(function(){
+          $('ul').toggleClass('show');
+        })
+      })
+    </script>
   </head>
   <body>
-  
-    
 
+    <nav>
+      <label class="logo">
+        <img class="original-logo" src="images/Logo.jpg" alt="PremiumCAD">
+        <img class="alternate-logo" src="images/sq_logo.ico" alt="PremiumCAD">
+      </label>
+      <ul>
+        <li><a class="active">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="pathways.html">Pathways</a></li>
+        <li><a href="blog.html">Premium Blog</a></li>
+        <li><a href="#getintouch">Contact Us</a></li>
+      </ul>
+      <label id="icon">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </nav>
 
     <!-- BANNER SECTION -->
-    <section id="hero" class="d-flex align-items-center">
-      <div class="container">
+    <section id="hero" class="align-items-center">
+      <div class="container text-left">
         <h1>Welcome to <span class="blue-text">PremiumCAD</span></h1>
-        <h1>Your trusted source for</h1>
-        <h1><span class="auto-type orange-text"></span></h1>
+        <h2>Your trusted source for</h2>
+        <h2><span class="auto-type orange-text"></span></h2>
+        <a href="#about" class="btn btn-primary btn-lg mt-4">Get Started</a>
       </div>
     </section>
     <!-- BANNER SECTION END -->
@@ -54,7 +70,7 @@
 
     <!-- ABOUT US SECTION -->
     <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
           <div class="row gx-0">
               <div class="col-lg-6 d-flex flex-column justify-content-center">
                   <div class="content">
@@ -80,7 +96,7 @@
                       <div class="text-center text-lg-start">
                           <a href="about.html"
                               class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                              <span>Know More about us</span>
+                              <span></span>
                               <i class="bi bi-arrow-right"></i>
                           </a>
                       </div>
@@ -290,7 +306,7 @@
                 Unleash the full potential of our collaborative alliance, where as a valued client, your unique 
                 vision and requirements merge with our expertise. This dynamic partnership fuels innovation and 
                 drives transformative outcomes, propelling your success to new heights.</p>
-              <button class="btn btn-primary">Discover your path to success +</button>
+                <a href="pathways.html" class="btn btn-primary">Discover your path to success +</a>
             </div>
           </div>
         </div>
@@ -457,6 +473,13 @@
         </div>
         <div class="imgBx">
           <img src="images/popup_editedjpg.jpg" alt="">
+          <p class="image-text">
+            RE+
+            <br>
+            September 11-14th, 2023.
+            <br>
+            Las Vegas, NV
+          </p>
         </div>
         <div class="content">
           <div>
