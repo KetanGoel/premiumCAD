@@ -33,6 +33,29 @@ section {
   overflow: hidden;
 }
 
+/* Customize the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 0.6em; /* Adjust the width as needed */
+  height: 0.1em; /* Adjust the height as needed */
+}
+
+/* Customize the track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #3d4f97; /* Change the background color as desired */
+}
+
+/* Customize the thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #d95a31; /* Change the color of the scrollbar thumb */
+  border-radius: 100vw;
+  border: .1em solid #3d4f97;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7e59; /* Change the color of the scrollbar thumb */
+}
+
 /* Nav Bar */
 
 nav {
@@ -90,13 +113,13 @@ nav a:hover::after {
   left: 0;
   width: 100%;
   height: 4px; /* Adjust the thickness of the underline */
-  background-color: #483285; /* Set the color of the underline */
+  background-color: #3d4f97; /* Set the color of the underline */
   transition: .5s;
 }
 
 /* Optional: Change the underline color on hover */
 nav a:hover::after {
-  background-color:#483285; /* Change to your desired hover color */
+  background-color:#3d4f97; /* Change to your desired hover color */
 }
 
 nav #icon {
@@ -200,7 +223,7 @@ nav #icon {
   text-align: center;
   padding: 20px;
   font-weight: 600;
-  color: #483285;
+  color: #3d4f97;
   font-size: 60px;
 }
 
@@ -425,7 +448,7 @@ nav #icon {
 }
 
 footer {
-  background: #2d348f;
+  background: #3d4f97;
   height: auto;
   width: 100vw;
   font-family: "Open Sans";
@@ -473,7 +496,7 @@ footer {
 }
 
 .socials a i {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   transition: color .4s ease;
 }
 

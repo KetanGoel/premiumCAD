@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 .desktop-image {
@@ -19,6 +19,30 @@
       display: block; /* Display the mobile image on mobile screens */
   }
 }
+
+/* Customize the width and height of the scrollbar */
+::-webkit-scrollbar {
+  width: 0.6em; /* Adjust the width as needed */
+  height: 0.1em; /* Adjust the height as needed */
+}
+
+/* Customize the track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background: #3d4f97; /* Change the background color as desired */
+}
+
+/* Customize the thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background: #d95a31; /* Change the color of the scrollbar thumb */
+  border-radius: 100vw;
+  border: .1em solid #3d4f97;
+  transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff7e59; /* Change the color of the scrollbar thumb */
+}
+
 
 
 nav {
@@ -76,13 +100,13 @@ nav a:hover::after {
   left: 0;
   width: 100%;
   height: 4px; /* Adjust the thickness of the underline */
-  background-color: #483285; /* Set the color of the underline */
+  background-color: #3d4f97; /* Set the color of the underline */
   transition: .5s;
 }
 
 /* Optional: Change the underline color on hover */
 nav a:hover::after {
-  background-color:#483285; /* Change to your desired hover color */
+  background-color:#3d4f97; /* Change to your desired hover color */
 }
 
 nav #icon {
@@ -134,7 +158,7 @@ nav #icon {
   }
   a.active,a:hover {
     border: none;
-    color: #3498db;
+    color: #3d4f97;
 
   }
   nav ul.show{
@@ -196,15 +220,16 @@ nav #icon {
 }
 
 .quality-intro h3 {
-  font-size: 14px;
-  font-weight: 700;
-  color: #483285;
+  font-size: 25px;
+  font-weight: 600;
+  color: #3d4f97;
   text-transform: uppercase;
   text-align: center;
 }
 
 .quality-intro p {
   margin: 15px 0 30px 0;
+  font-weight: 300;
   line-height: 24px;
   text-align: justify;
   font-size: 19px;
@@ -220,6 +245,7 @@ nav #icon {
 /******* Content SECTION END *******/
   
 .services .section-header h3 {
+  font-size: 25px;
   text-align: left;
   font-weight: 600;
   padding: 10px 0px;
@@ -248,7 +274,7 @@ nav #icon {
   text-align: center;
   padding: 20px;
   font-weight: 500;
-  color: #483285;
+  color: #3d4f97;
   font-size: 50px;
 }
 
@@ -263,10 +289,10 @@ nav #icon {
 }
 
 .aboutus h2{
-  font-size: 26px;
+  font-size: 25px;
 }
 .heading h2{
-  font-size: 26px;
+  font-size: 25px;
 }
 
 
@@ -287,7 +313,7 @@ nav #icon {
 }
 
 .contactus .title h2 {
-  color: #483285;
+  color: #3d4f97;
   font-weight: 500;
   font-size: 50px;
 }
@@ -358,7 +384,7 @@ nav #icon {
 
 .inputBox span {
   margin-top: 10px;
-  color: #483285;
+  color: #3d4f97;
   margin-bottom: 5px;
   font-weight: 500;
 }
@@ -485,7 +511,7 @@ nav #icon {
 }
 
 footer {
-  background: #483285;
+  background: #3d4f97;
   height: auto;
   width: 100vw;
   font-family: "Open Sans";
@@ -533,7 +559,7 @@ footer {
 }
 
 .socials a i {
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   transition: color .4s ease;
 }
 
