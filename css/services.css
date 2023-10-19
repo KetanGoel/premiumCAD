@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #444444;
 }
 
@@ -18,7 +18,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .desktop-image {
@@ -230,14 +230,14 @@ section {
 .main-heading {
   text-align: center;
   padding: 40px 0 0 0;
-  font-weight: 600;
   color: #483285;
   font-size: 50px;
 }
 
 .main-para {
   padding: 20px 110px 0 110px;
-  font-family: "Raleway", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
   text-align: justify;
   font-size: 20px;
 }
@@ -246,6 +246,9 @@ section {
   .top-content{
     width: 100%;
     margin: 0;
+  }
+  .main-para {
+    padding: 25px;
   }
 }
 
@@ -291,8 +294,8 @@ section {
 }
 
 .services .service-box h3 {
-  color: #444444;
-  font-weight: 700;
+  color: #3d4f97;
+  font-weight: 600;
 }
 
 .services .service-box .read-more {
@@ -887,5 +890,5 @@ footer {
   background-position: center center;
   height: 40vh;
   width: 100%;
-  background-image: url(../images/servicepc.jpg);
+  background-image: url(../images/ser_banner.jpg);
 }
