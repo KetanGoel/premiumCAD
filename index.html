@@ -40,13 +40,29 @@
 
     <nav>
       <label class="logo">
-        <img class="original-logo" src="images/bluewhitelogo.png" alt="PremiumCAD">
+        <img class="original-logo" src="images/Logo_001-removebg-preview.png" alt="PremiumCAD">
         <img class="alternate-logo" src="images/invertedlogo.jpg" alt="PremiumCAD">
       </label>
       <ul>
         <li><a class="active">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li class="dropdown">
+          <a href="services.html">Services</a>
+          <ul class="dropdown-content">
+            <li class="dropdown-part">
+              <a href="services.html#cad-services">CAD Services</a>
+            </li>
+            <li class="dropdown-part">
+              <a href="services.html#solar-services">Solar Designs</a>
+            </li>
+            <li class="dropdown-part">
+              <a href="services.html#gis-services">GIS Solutions</a>
+            </li>
+            <li class="dropdown-part">
+              <a href="services.html#telecom-services">Telecom Services</a>
+            </li>
+          </ul>
+        </li>
         <li><a href="pathways.html">Pathways</a></li>
         <li><a href="blog.html">Premium Blog</a></li>
         <li><a href="index.html#getintouch">Contact Us</a></li>
@@ -55,9 +71,10 @@
         <i class="fa-solid fa-bars"></i>
       </label>
     </nav>
+    
 
     <!-- BANNER SECTION -->
-    <section id="hero" class="align-items-center">
+    <section id="hero" class="align-items-center first-section">
       <div class="container text-left">
         <h1>Welcome to <span class="blue-text">PremiumCAD</span></h1>
         <h2>Your trusted source for</h2>
@@ -85,14 +102,9 @@
                         designing of residential solar system. Our team has in depth knowledge of AHJ and Utility requirements 
                         and are conversant with various codes and compliances. We provide variety of services in this sector 
                         ranging from Sales Proposals, Permit Plans, Interconnection documents, Professional Engineering Support 
-                        and also As-Built drawings.</h2>
-                      <p style="font-size: medium;">
-                        Integrate with PremiumCAD for a competitive edge in the solar industry. 
-                        Benefit from collaboration, employee exchange, and quality monitoring. 
-                        Our skilled engineers offer customized solutions and round-the-clock dedication, 
-                        optimizing your design process for success. Partner with us and experience 
-                        excellence in every project.
-                      </p>
+                        and also As-Built drawings.
+                      </h2>
+                      <br>
                       <div class="text-center text-lg-start">
                           <a href="about.html"
                               class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
@@ -163,20 +175,20 @@
     <section class="counts">
       <div class="container">
         <div class="row counters">
-          <div class="col-lg-3 col-6 text-center">
-            <span>5</span>
+          <div class="col-lg-3 col-6 text-center counter">
+            <span data-count="5">0</span>
             <p>Countries</p>
           </div>
           <div class="col-lg-3 col-6 text-center">
-            <span>96</span>
+            <span data-count="96">0</span>
             <p>Active Clients</p>
           </div>
           <div class="col-lg-3 col-6 text-center">
-            <span>250+</span>
+            <span data-count="250">0</span>
             <p>Engineers In-House</p>
           </div>
           <div class="col-lg-3 col-6 text-center">
-            <span>2</span>
+            <span data-count="2">0</span>
             <p>Delivery Centers</p>
           </div>
         </div>
@@ -330,12 +342,12 @@
             <div class="formBox">
               <div class="row50">
                 <div class="inputBox">
-                  <span>First Name</span>
-                  <input type="text" placeholder="Your first name" required>
+                  <span>Name</span>
+                  <input type="text" placeholder="Enter full name" required>
                 </div>
                 <div class="inputBox">
-                  <span>Last Name</span>
-                  <input type="text" placeholder="Your last name" required>
+                  <span>Company</span>
+                  <input type="text" placeholder="Company name" required>
                 </div>
               </div>
               <div class="row50">
@@ -435,7 +447,7 @@
     <script type="text/javascript" src="js/script.js"></script>
     
     <!-- POPUP -->
-    <div class="popup">
+    <!-- <div class="popup">
       <div class="contentBox">
         <div class="close">
           <i class="fa-solid fa-xmark"></i>
@@ -464,7 +476,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <script>
       const popup = document.querySelector('.popup');
@@ -478,7 +490,7 @@
       close.addEventListener('click', () => {
       console.log("hello");
         popup.style.display = "none";
-      })
+      });
     </script>
 
   </body>

@@ -54,24 +54,40 @@
 <body>
 
   <nav>
-    <label class="logo">
-      <img class="original-logo" src="images/bluewhitelogo.png" alt="PremiumCAD">
-      <img class="alternate-logo" src="images/invertedlogo.jpg" alt="PremiumCAD">
-    </label>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a class="active">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="pathways.html">Pathways</a></li>
-      <li><a href="blog.html">Premium Blog</a></li>
-      <li><a href="about.html#getintouch">Contact Us</a></li>
-    </ul>
-    <label id="icon">
-      <i class="fa-solid fa-bars"></i>
-    </label>
-  </nav>
+      <label class="logo">
+        <img class="original-logo" src="images/Logo_001-removebg-preview.png" alt="PremiumCAD">
+        <img class="alternate-logo" src="images/invertedlogo.jpg" alt="PremiumCAD">
+      </label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active">About Us</a></li>
+        <li class="dropdown">
+          <a href="services.html">Services</a>
+          <ul class="dropdown-content">
+            <li class="dropdown-part">
+              <a href="services.html#cad-services">CAD Services</a>
+            </li>
+            <li class="dropdown-part">
+              <a href="services.html#solar-services">Solar Designs</a>
+            </li>
+            <li class="dropdown-part">
+              <a href="services.html#gis-services">GIS Solutions</a>
+            </li>
+            <li class="dropdown-part">
+              <a href="services.html#telecom-services">Telecom Services</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="pathways.html">Pathways</a></li>
+        <li><a href="blog.html">Premium Blog</a></li>
+        <li><a href="about.html#getintouch">Contact Us</a></li>
+      </ul>
+      <label id="icon">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+    </nav>
   
-  <section class="servicebanner"></section>
+  <section class="servicebanner first-section"></section>
 
   
   <section class="main_content">
@@ -249,26 +265,7 @@
   </section>
   <!-- FOOTER END -->
 
-  <script>
-    const navbar = document.querySelector('.navbar');
-  
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) {
-        navbar.classList.add('navbar-scrolled');
-      } else {
-        navbar.classList.remove('navbar-scrolled');
-      }
-    });
-  
-    // For the mobile dropdown menu
-    const navbarToggle = document.querySelector('.navbar-toggler');
-    const navbarCollapse = document.querySelector('.navbar-collapse');
-  
-    navbarToggle.addEventListener('click', () => {
-      navbarCollapse.classList.toggle('show');
-    });
-  </script>
-  <script src="script.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 
 </html>

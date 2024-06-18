@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -63,7 +69,7 @@ nav {
   list-style: none;
   height: 85px;
   width: 100%;
-  background: #d95a31;
+  background: #f0f0f0;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -77,7 +83,7 @@ label.logo {
   line-height: 80px;
 }
 
-nav ul{
+nav ul {
   float: right;
   margin-right: 40px;
 }
@@ -87,19 +93,20 @@ nav li {
   margin: 0 8px;
   line-height: 80px;
   text-decoration: none;
+  position: relative;
 }
 
-nav a{
+nav a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 18px;
   text-transform: uppercase;
   padding: 7px 10px;
   border-radius: 3px;
 }
 
-a.active,a:hover {
-  color: white; 
+a.active, a:hover {
+  color: #3498db; 
   position: relative;
   text-decoration: none !important;
   transition: .5s;
@@ -119,7 +126,7 @@ nav a:hover::after {
 
 /* Optional: Change the underline color on hover */
 nav a:hover::after {
-  background-color:#3d4f97; /* Change to your desired hover color */
+  background-color: #3d4f97; /* Change to your desired hover color */
 }
 
 nav #icon {
@@ -134,20 +141,19 @@ nav #icon {
 }
 
 @media (max-width: 1048px) {
-  label.logo{
+  label.logo {
     font-size: 32px;
     padding-left: 60px;
-  } 
+  }
   nav ul {
     margin-right: 20px;
-
   }
-  nav a{
+  nav a {
     font-size: 17px;
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1450px) {
   nav #icon {
     display: block;
   }
@@ -161,36 +167,43 @@ nav #icon {
     text-align: center;
     transition: all .5s;
   }
-  nav li{
+  nav li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-  nav a{
+  nav a {
     font-size: 20px;
   }
-  a.active,a:hover {
+  a.active, a:hover {
     border: none;
     color: #3498db;
-
   }
-  nav ul.show{
+  nav ul.show {
     left: 0;
   }
 }
 
-@media (max-width: 400px) {
-  label.logo{
+@media (max-width: 700px) {
+  .logo img.original-logo {
+    display: none; /* Hide the original logo */
+  }
+  .logo img.alternate-logo {
+    display: inline-block; /* Display the alternate logo */
+  }
+
+  label.logo {
     font-size: 20px;
     padding-left: 10px;
   }
-  nav ul{
+  nav ul {
     margin-right: 10px;
   }
-  nav a{
+  nav a {
     font-size: 14px;
   }
 }
+
 .logo .original-logo {
   display: inline-block;
 }
@@ -201,14 +214,55 @@ nav #icon {
   max-height: 60px;
 }
 
-@media (max-width: 500px) {
-  .logo img.original-logo {
-    display: none; /* Hide the original logo */
-  }
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-  .logo img.alternate-logo {
-    display: inline-block; /* Display the alternate logo */
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f0f0f0;
+  width: 210px;
+  z-index: 4;
+  top: 80px; /* Adjust to align with the navbar height */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: Add a background color to dropdown links on hover
+ .dropdown-content a:hover {
+  background-color: #ddd;
+} */
+
+/* Style adjustments for responsive dropdown */
+@media (max-width: 1300px) {
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
   }
+}
+
+/* Add this CSS to hide the navbar */
+nav.hidden {
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.showing {
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
 }
 
 
@@ -216,9 +270,9 @@ nav #icon {
 .servicebanner{
   background-size: cover;
   background-position: center center;
-  height: 40vh;
+  height: 60vh;
   width: 100%;
-  background-image: url(../images/modern-thin-line-design-concept-260nw\ \(1\).jpg);
+  background-image: url(../images/bdeb58_04e5f3dd42964c9491d9d256f0f8f558~mv2.jpeg);
 }
 
 
