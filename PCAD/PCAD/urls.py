@@ -28,7 +28,7 @@ urlpatterns = [
     path('services.html' , services , name="services"),
     path('index.html' , home , name="home"),
     path('blogs.html', blogpage, name='blogs'),
-    path('blogs/<int:id>/', blogdetails, name='blogdetails'),
+    path('blogs.html/<int:id>/', blogdetails, name='blogdetails'),
 ]
 
 if settings.DEBUG:

@@ -100,7 +100,7 @@
                     <a href="#" class="blog-title">{{ blog.title}}</a>
                     <p>{{blog.content|truncatechars:250}}
                     </p>
-                    <a class="readmore" href="{% url 'blogdetails' id=blog.id %}">Read More</a> 
+                    <a class="readmore" href="{% url 'blogdetails' blog.id %}">Read More</a> 
                 </div> 
             </div>
         </div>
