@@ -15,7 +15,7 @@ def services(request):
 
 def blogpage(request):
     blogs = blog.objects.all()
-    return render(request, 'blog.html' , {'blogs' : blogs})
+    return render(request, 'blogs.html' , {'blogs' : blogs})
 
 def blogdetails(request, id):
     blog = get_object_or_404(blog, id=id)

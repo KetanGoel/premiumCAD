@@ -27,7 +27,7 @@ urlpatterns = [
     path('pathways.html' , pathways , name="pathways"),
     path('services.html' , services , name="services"),
     path('index.html' , home , name="home"),
-    path('blog', blogpage, name='blogs'),
+    path('blogs.html', blogpage, name='blogs'),
     path('blogs/<int:id>/', blogdetails, name='blogdetails'),
 ]
 
