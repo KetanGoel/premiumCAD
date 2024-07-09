@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>{{blog.title}} | Premium Blog</title>
+    <link rel="stylesheet" href="{% static 'css/blogpage.css' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous">
+  
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="{% static 'images/sq_logo.ico' %}">
+
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- cinzel font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" 
+        rel="stylesheet">
+</head>
+<script>
+    $(document).ready(function() {
+      $('#icon').click(function(){
+        $('ul').toggleClass('show');
+      })
+    })
+</script>
+<body>
+
+  <nav>
+    <label class="logo">
+      <img class="original-logo" src="{% static 'images/Logo_001-removebg-preview.png' %}" alt="PremiumCAD">
+      <img class="alternate-logo" src="{% static 'images/invertedlogo.jpg' %}" alt="PremiumCAD">
+    </label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li class="dropdown">
+        <a href="services.html">Services</a>
+        <ul class="dropdown-content">
+          <li class="dropdown-part">
+            <a href="services.html#cad-services">CAD Services</a>
+          </li>
+          <li class="dropdown-part">
+            <a href="services.html#solar-services">Solar Designs</a>
+          </li>
+          <li class="dropdown-part">
+            <a href="services.html#gis-services">GIS Solutions</a>
+          </li>
+          <li class="dropdown-part">
+            <a href="services.html#telecom-services">Telecom Services</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="pathways.html">Pathways</a></li>
+      <li><a href="blogs.html">Premium Blog</a></li>
+      <li><a href="index.html#getintouch">Contact Us</a></li>
+    </ul>
+    <label id="icon">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+  </nav>
+
+
+    <div class="blog-container">
+        <!-- Blog Header Section -->
+        <div class="blog-header">
+            <div class="row align-items-center">
+                <div class="col-md-10">
+                    <h1 class="blog-title">{{blog.title}}</h1>
+                    <p class="blog-info"><img src="{{ blog.coverimage.url}}" alt="PremiumCAD"> PremiumCAD &#x2022; {{blog.date}} &#x2022; {{blog.readtime}} min read</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <!-- Blog Content Section -->
+        <div class="blog-content">
+            <p class="blog-paragraph">
+                <!-- <b>Solar PV design services</b> are a critical part of any solar project. An experienced solar design company will 
+                efficiently assess your needs, site, and budget to create a custom solar system that meets your specific requirements.
+                <br>
+                <br>
+                Solar PV design services typically include the following:
+                <br>
+                <br>
+                <b>Site Assessment:</b>
+                <br>
+                The site surveyor will visit your site to assess the amount of sunlight available, the size of your roof or other 
+                installation area, and any potential obstructions to solar energy collection.
+                <br>
+                <b>System Design:</b>
+                <br>
+                The solar PV designer will use the information from the site assessment to design a solar system that meets your 
+                energy needs and budget. The system design will include the number and type of solar panels, the inverter, and any 
+                other components needed to install and operate the system.
+                <br>
+                <b>Permitting and inspection:</b>
+                <br>
+                The experts would then work with you to obtain the necessary permits and inspections for your solar project.
+                <br>
+                <b>Construction:</b>
+                <br>
+                The construction company will oversee the construction of your solar system to ensure that it is installed according to 
+                the design and meets all applicable codes and standards.
+                <br>
+                <b>Commissioning:</b>
+                <br>
+                Once the solar system is installed, the installation company will help commission it to ensure that it is operating properly 
+                and meeting your energy needs.
+                Solar PV design services can be provided by solar installers, engineering firms, or other qualified professionals however 
+                always go with an experienced design company like <b>PremiumCAD</b>.
+                <br>
+                <br>
+                Solar PV  can be a significant investment, but they can also save you money on your electric bills and reduce your carbon footprint. 
+                By working with a qualified solar designer, you can be sure that your solar project is designed and installed properly to meet your 
+                needs and budget.
+            </p>
+            <br>
+            <h2 class="blog-subheading">Benefits of Solar PV Design Services</h2>   
+            <p class="blog-paragraph">
+                There are many benefits to using solar PV design services. These benefits include:
+                <br>
+                <br>
+                <b>Peace of mind:</b> 
+                <br>
+                Knowing that your solar system is designed and installed by a qualified professional can give you peace of mind.
+                <br>
+                <b>Efficiency:</b> 
+                <br>
+                A well-designed solar system will be more efficient and produce more energy than a poorly designed system
+                <br>
+                <b>Reliability:</b> 
+                <br>
+                A well-designed and installed solar system will be more reliable and less likely to experience problems.
+                <br>
+                <b>Cost savings:</b> 
+                <br>
+                Solar PV design services can help you save money on your electric bills.
+                <br>
+                <b>Environmental benefits: </b>
+                <br>Solar PV systems can help reduce your carbon footprint and contribute to a cleaner environment.
+            </p>
+            <br>
+            <h2 class="blog-subheading">How to Choose a Solar PV Design Company</h2>   
+            <p class="blog-paragraph">
+                When choosing a solar PV design company, there are a few things you should keep in mind:
+                <br>
+                <br>
+                <b>Experience:</b> 
+                <br>The company should have experience designing and installing solar systems in your market. <br>
+                <b>Reputation:</b> 
+                <br>
+                The company should have a good reputation and be reliable. 
+                <br>
+                <b>Price:</b> 
+                <br>
+                The company should be competitive in terms of price. 
+                <br>
+                <b>Services:</b> 
+                <br>
+                The company should offer a full range of design services like system design, adhering to AHJ and Utility requirements, 
+                permitting (if needed), creating As-Built drawings, and filling out the interconnection, utility and rebate applications.
+                <br>
+                By following these tips, you can be sure to choose a solar PV design company that will help you get the most out of your solar project.
+            </p>
+
+            <h2 class="blog-subheading">Conclusion</h2>   
+            <p class="blog-paragraph">
+                Solar PV design services are an essential part of any solar project. By working with a qualified solar company like PremiumCAD, you can be 
+                sure that your solar system is designed and installed properly to meet your needs and budget. -->
+            {{blog.content}}
+            </p>
+        </div>
+    </div>
+    
+    <div class="recent-posts">
+        <div class="recent-heading">
+            <h2>Recent Posts</h2>
+        </div>
+        <div class="recent-button">
+            <a href="{% url 'blogs' %}" class="btn btn-primary">See All</a>
+        </div>
+    </div>
+    
+   <!-- Removed blog previews below blog details page-->
+    
+    <!-- FOOTER START -->
+  <section id="foot" class="foot">
+    <footer>
+      <div class="footer-content">
+        <h3><span>Premium</span><span>CAD</span></h3>
+        <p>Empowering industries with our expertise in CAD, GIS, telecom, and solar designs, driving success through 
+          innovation and precision.</p>
+        <ul class="socials">
+          <li><a href="https://www.linkedin.com/company/premiumcad/"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>PremiumCAD &copy; All Rights Reserved</p>
+      </div>
+    </footer>
+  </section>
+  <!-- FOOTER END -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
