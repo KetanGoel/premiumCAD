@@ -35,6 +35,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- CSS File-->
+   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" type="text/css" href="css/about-us.css">
 
   <!-- FAVICON -->
@@ -54,114 +55,167 @@
 <body>
 
   <nav>
-      <label class="logo">
-        <img class="original-logo" src="images/Logo_001-removebg-preview.png" alt="PremiumCAD">
-        <img class="alternate-logo" src="images/invertedlogo.jpg" alt="PremiumCAD">
-      </label>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active">About Us</a></li>
-        <li class="dropdown">
-          <a href="services.html">Services</a>
-          <ul class="dropdown-content">
-            <li class="dropdown-part">
-              <a href="services.html#cad-services">CAD Services</a>
-            </li>
-            <li class="dropdown-part">
-              <a href="services.html#solar-services">Solar Designs</a>
-            </li>
-            <li class="dropdown-part">
-              <a href="services.html#gis-services">GIS Solutions</a>
-            </li>
-            <li class="dropdown-part">
-              <a href="services.html#telecom-services">Telecom Services</a>
-            </li>
-          </ul>
-        </li>
-        <li><a href="pathways.html">Pathways</a></li>
-        <li><a href="blog.html">Premium Blog</a></li>
-        <li><a href="about.html#getintouch">Contact Us</a></li>
-      </ul>
-      <label id="icon">
-        <i class="fa-solid fa-bars"></i>
-      </label>
-    </nav>
+    <label class="logo">
+      <img class="original-logo" src="images/Logo_001-removebg-preview.png" alt="PremiumCAD">
+      <img class="alternate-logo" src="images/logo_mini.png" alt="PremiumCAD">
+    </label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active">About Us</a></li>
+      <li class="dropdown">
+        <a href="services.html">Services</a>
+        <ul class="dropdown-content">
+          <li class="dropdown-part">
+            <a href="services/cadservices.html">CAD Services</a>
+            <ul class="sub-dropdown">
+              <li><a href="services/cadservices.html#one">2D/3D Drafting</a></li>
+              <li><a href="services/cadservices.html#two">Engineering Drawings</a></li>
+              <li><a href="services/cadservices.html#three">BIM</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="services/solardesign.html">Solar Designs</a>
+            <ul class="sub-dropdown">
+              <li><a href="services/solardesign.html#one">Residential Drawings</a></li>
+              <li><a href="services/solardesign.html#two">Commercial Designs</a></li>
+              <li><a href="services/solardesign.html#three">Reviews and Stamps</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="services/gisservices.html">GIS Solutions</a>
+            <ul class="sub-dropdown">
+              <li><a href="services/gisservices.html#one">Utility Mapping</a></li>
+              <li><a href="services/gisservices.html#two">GIS Mapping</a></li>
+              <li><a href="services/gisservices.html#three">Georeferencing</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="services/telecomservices.html">Telecom Services</a>
+            <ul class="sub-dropdown">
+              <li><a href="services/telecomservices.html#one">Small Cell/5G Drafting</a></li>
+              <li><a href="telecom-service2.html#two">Construction Drawings</a></li>
+              <li><a href="telecom-service3.html#three">FTTx Network Design</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      
+      <li><a href="pathways.html">Process</a></li>
+      <li><a href="career.html">Career</a></li>
+      <li><a href="blog.html">Premium Blog</a></li>
+      <li><a href="about.html#getintouch">Contact Us</a></li>
+    </ul>
+    <label id="icon">
+      <i class="fa-solid fa-bars"></i>
+    </label>
+  </nav>
   
-  <section class="servicebanner first-section"></section>
+  <div id="about_banner"></div>
 
   
   <section class="main_content">
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-8 offset-lg-2">
-          <div class="aboutus-banner">
-            <h1 class="main-heading">About Us</h1>
-          </div>
-          <div class="aboutus">
-            <h2>Who We Are</h2>
-            <p>PremiumCAD has an extensive experience in CAD / GIS industry of India 
-              and has been provider of quality manpower and contractual delivery of 
-              complex projects to various outsourcing companies in India catering to a 
-              host of industries across the globe.
-              <br>
-              We have a decade-plus of involvement and experience in designing residential 
-              solar plans. We provide a wide range of services in this division ranging from 
-              sales to interconnection. Our team has an in-depth understanding of AHJ and Utility 
-              requirements and are familiar with various codes and compliances.
-              <br>
-              We started our journey as freelancer offering Solar PV Design Services and Residential 
-              Solar permit plans for installers in US. We helped leading Indian companies to set up their 
-              outsourcing operations. We have experience designing in residential solar plans.
-              <br>
-              Now PremiumCAD has a team of over 145 employees with dedicated training centers and tie-up 
-              with some of the technical institutes and colleges in the NCR of India. We Build Operate 
-              and Transfer projects which are later white labeled and delivered to Global Clientele of 
-              our Indian Clients.
-              <br>
-              After years of experience and augmenting necessary office infrastructure, hardware and 
-              dedicated sales and marketing potential, PremiumCAD is ready to offer the services 
-              directly to the clients.</p>
-          </div>
-          <br>
-          <!-- Other sections like "What We Do," "Why Us," etc. -->
-          <div class="heading">
-            <h2>What We Do</h2>
-            <p>We are the preferred outsourcing partner for CAD & GIS based Engineering designs. 
-              With an experienced and a highly motivated team of professionals, we provide a 
-              competitive edge to our clients in a price-sensitive market by offering scalable 
-              and timely deliveries with agreed quality SLAs.</p>
-          </div>
-          <br>
-          <div class="heading">
-            <h2>Why Us</h2>
-            <p>We offer the flexibility and reliability which gives you a Head-Start in a 
-              cut-throat competitive environment. With multiple options to choose from and 
-              fully customizable quality and delivery TAT, we are able to provide you with the 
-              most economical design service with consistency. Our team of engineers is 
-              working round the clock at your disposal.</p>
-          </div>
-          <br>
-          <div class="heading">
-            <h2>Partnership & Reverse Integration</h2>
-            <p>We are not just an outsource partner! We are an integral part of our client's 
-              value chain and offer collaborations, employee exchange and quality monitoring 
-              through resident engineers and shared training facilities. We blend perfectly 
-              with our client's working culture and offer a captive back-office for design 
-              and sales plan.</p>
-          </div>
-          <br>
-          <div class="heading">
-            <h2>Process Orientation</h2>
-            <p>Quality is the key to the success of any business and at PremiumCAD, we are committed to it. 
-              We have a state of the art Quality Management System designed to facilitate continual improvement 
-              of the business. We use your feedback and inputs to evaluate our processes and upgrade 
-              the training and quality management process.</p>
-          </div>
-          <br>
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="aboutus-banner">
+                    <h1 class="main-heading">About Us</h1>
+                </div>
+                <div class="aboutus">
+                    <h2>Who We Are</h2>
+                    <p>
+                        PremiumCAD has extensive experience in the CAD and GIS industry, providing quality manpower and delivering complex projects globally. 
+                        Our team excels in designing residential solar plans, understanding AHJ and Utility requirements, and meeting various codes and compliances.
+                        <br>
+                        We began as freelancers offering Solar PV Design Services and Residential Solar permit plans for US installers. 
+                        Today, we have grown to a team of over 145 employees with dedicated training centers and partnerships with technical institutes 
+                        in the NCR of India. Our Build, Operate, and Transfer projects are white-labeled and delivered to a global clientele.
+                    </p>
+                </div>
+                <br>
+                <div class="heading">
+                    <h2>What We Do</h2>
+                    <p>We are the preferred outsourcing partner for CAD & GIS based Engineering designs. 
+                        With an experienced and a highly motivated team of professionals, we provide a 
+                        competitive edge to our clients in a price-sensitive market by offering scalable 
+                        and timely deliveries with agreed quality SLAs.</p>
+                </div>
+                <br>
+                <div class="heading">
+                    <h2>Why Us</h2>
+                    <p>We provide flexibility and reliability, giving you a head-start in a competitive environment. With fully customizable quality and 
+                        delivery TAT, we offer economical design services with consistency. Our team of engineers works round the clock to meet your needs.</p>
+                </div>
+                <br>
+                <div class="heading mission">
+                    <h2>Our Mission</h2>
+                    <div class="mission-content">
+                        <div class="mission-text">
+                            <p>Our mission is to provide comprehensive engineering design services to our clients, utilizing cutting-edge technology, 
+                                industry-leading expertise, and meticulous attention to detail. We strive to deliver solutions that exceed expectations, 
+                                optimize efficiency, and contribute to the sustainable development of society. Through continuous improvement, 
+                                collaboration, and a culture of excellence, we aim to be the preferred partner for all engineering design needs.</p>
+                        </div>
+                        <div class="mission-image">
+                            <img src="images/values/v1.png" alt="Our Mission">
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="heading vision">
+                    <h2>Our Vision</h2>
+                    <div class="vision-content">
+                        <div class="vision-image">
+                            <img src="images/values/v2.png" alt="Our Vision">
+                        </div>
+                        <div class="vision-text">
+                            <p>To be the leading global engineering design company, renowned for our innovative solutions, exceptional quality, 
+                                and unwavering commitment to client satisfaction.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="heading values">
+                  <h2>Core Values</h2>
+                  <div class="values-content">
+                      <div class="values-text">
+                          <ul>
+                              <li><strong>Trust</strong>: We earn the trust of our customers, employees, and extended family.</li>
+                              <li><strong>Excellence</strong>: We are committed to the highest quality and safety standards.</li>
+                              <li><strong>Service</strong>: Customer first, frontline focused, and agile in service to customers.</li>
+                              <li><strong>Innovation</strong>: We embrace change and continually seek new ways to improve.</li>
+                              <li><strong>Gratitude</strong>: We treat others as we want to be treated.</li>
+                              <li><strong>Responsive</strong>: Being responsive shows that you put others first and care about their needs.</li>
+                              <li><strong>Teamwork</strong>: We recognize that trusting relationships are key to achieving success.</li>
+                          </ul>
+                      </div>
+                      <div class="values-image">
+                          <img src="images/values/v3.png" alt="Our Core Values">
+                      </div>
+                  </div>
+              </div>
+                <br>
+                <div class="heading">
+                    <h2>Partnership & Reverse Integration</h2>
+                    <p>We are not just an outsource partner! We are an integral part of our client's 
+                        value chain and offer collaborations, employee exchange and quality monitoring 
+                        through resident engineers and shared training facilities. We blend perfectly 
+                        with our client's working culture and offer a captive back-office for design 
+                        and sales plan.</p>
+                </div>
+                <br>
+                <div class="heading">
+                    <h2>Process Orientation</h2>
+                    <p>Quality is the key to the success of any business and at PremiumCAD, we are committed to it. 
+                        We have a state of the art Quality Management System designed to facilitate continual improvement 
+                        of the business. We use your feedback and inputs to evaluate our processes and upgrade 
+                        the training and quality management process.</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
+
+
 
   <!-- CONTACT US SECTION  -->
   <section id="getintouch" class="getintouch">

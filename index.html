@@ -11,6 +11,10 @@
     <!-- Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- locomotive and swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +25,7 @@
     <link rel="icon" type="image/x-icon" href="images/sq_logo.ico">
 
     <!-- CSS File-->
+     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -41,7 +46,7 @@
     <nav>
       <label class="logo">
         <img class="original-logo" src="images/Logo_001-removebg-preview.png" alt="PremiumCAD">
-        <img class="alternate-logo" src="images/invertedlogo.jpg" alt="PremiumCAD">
+        <img class="alternate-logo" src="images/logo_mini.png" alt="PremiumCAD">
       </label>
       <ul>
         <li><a class="active">Home</a></li>
@@ -50,20 +55,42 @@
           <a href="services.html">Services</a>
           <ul class="dropdown-content">
             <li class="dropdown-part">
-              <a href="services.html#cad-services">CAD Services</a>
+              <a href="services/cadservices.html">CAD Services</a>
+              <ul class="sub-dropdown">
+                <li><a href="services/cadservices.html#one">2D/3D Drafting</a></li>
+                <li><a href="services/cadservices.html#two">Engineering Drawings</a></li>
+                <li><a href="services/cadservices.html#three">BIM</a></li>
+              </ul>
             </li>
             <li class="dropdown-part">
-              <a href="services.html#solar-services">Solar Designs</a>
+              <a href="services/solardesign.html">Solar Designs</a>
+              <ul class="sub-dropdown">
+                <li><a href="services/solardesign.html#one">Residential Drawings</a></li>
+                <li><a href="services/solardesign.html#two">Commercial Designs</a></li>
+                <li><a href="services/solardesign.html#three">Reviews and Stamps</a></li>
+              </ul>
             </li>
             <li class="dropdown-part">
-              <a href="services.html#gis-services">GIS Solutions</a>
+              <a href="services/gisservices.html">GIS Solutions</a>
+              <ul class="sub-dropdown">
+                <li><a href="services/gisservices.html#one">Utility Mapping</a></li>
+                <li><a href="services/gisservices.html#two">GIS Mapping</a></li>
+                <li><a href="services/gisservices.html#three">Georeferencing</a></li>
+              </ul>
             </li>
             <li class="dropdown-part">
-              <a href="services.html#telecom-services">Telecom Services</a>
+              <a href="services/telecomservices.html">Telecom Services</a>
+              <ul class="sub-dropdown">
+                <li><a href="services/telecomservices.html#one">Small Cell/5G Drafting</a></li>
+                <li><a href="telecom-service2.html#two">Construction Drawings</a></li>
+                <li><a href="telecom-service3.html#three">FTTx Network Design</a></li>
+              </ul>
             </li>
           </ul>
         </li>
-        <li><a href="pathways.html">Pathways</a></li>
+        
+        <li><a href="pathways.html">Process</a></li>
+        <li><a href="career.html">Career</a></li>
         <li><a href="blog.html">Premium Blog</a></li>
         <li><a href="index.html#getintouch">Contact Us</a></li>
       </ul>
@@ -74,102 +101,60 @@
     
 
     <!-- BANNER SECTION -->
-    <section id="hero" class="align-items-center first-section">
-      <div class="container text-left">
-        <h1>Welcome to <span class="blue-text">PremiumCAD</span></h1>
-        <h2>Your trusted source for</h2>
-        <h2><span class="auto-type orange-text"></span></h2>
-        <a href="index.html#about" class="btn btn-primary btn-lg mt-4">Get Started</a>
+    <section id="hero" class="first-section">
+      <div id="heroone">
+        <h1>SHAPING SOLAR FUTURES</h1>
+      </div>
+      <div class="container" id="herotwo">
+        <!-- <h2></h2> -->
+        <h2>Empowering a sustainable future with cutting-edge solar PV design solutions, PremiumCAD stands at the forefront of innovation. Trust us for tailored expertise to meet your energy needs in <span class="auto-type"></span>.</h2>
+        <a href="index.html#page2-bottom" class="btn btn-primary btn-lg mt-4">Get Started</a>
       </div>
     </section>
     <!-- BANNER SECTION END -->
 
 
-    <!-- ABOUT US SECTION -->
-    <section id="about" class="about">
-      <div class="container">
-          <div class="row gx-0">
-              <div class="col-lg-6 d-flex flex-column justify-content-center">
-                  <div class="content">
-                      <h3>Who We Are</h3>
-                      <h2>
-                        PremiumCAD is the one of the leading providers of Solar PV installation Design and Drawing Services. 
-                        We are focused on partnering with solar installers and contractors in the U.S. to bring in efficiencies 
-                        on the Solar Designs and Engineering Drawings. PremiumCAD has years of experience in Engineering & Design 
-                        industry and has been provider of quality services to numerous clients and partners across US and Europe. 
-                        We offer solar design service at competitive cost and quick turnaround time. All designs adhere to the 
-                        AHJ Regulations, Building Codes, Fire Codes, NEC & Utility regulations. We have extensive experience in 
-                        designing of residential solar system. Our team has in depth knowledge of AHJ and Utility requirements 
-                        and are conversant with various codes and compliances. We provide variety of services in this sector 
-                        ranging from Sales Proposals, Permit Plans, Interconnection documents, Professional Engineering Support 
-                        and also As-Built drawings.
-                      </h2>
-                      <br>
-                      <div class="text-center text-lg-start">
-                          <a href="about.html"
-                              class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                              <span></span>
-                              <i class="bi bi-arrow-right"></i>
-                          </a>
-                      </div>
-                  </div>
-                </div>
-              <div class="col-lg-6 d-flex align-items-center">
-                  <img src="images/about-us.png" class="img-fluid" alt="image-loading...">
-              </div>
+    <div id="page2" >
+      <div id="moving-text">
+          <div class="con">
+              <h1>EFFICIENT</h1>
+              <div id="gola"></div>
+              <h1>INNOVATIVE</h1>
+              <div id="gola"></div>
+              <h1>RELIABLE</h1>
+              <div id="gola"></div>
+          </div>
+          <div class="con">
+              <h1>EFFICIENT</h1>
+              <div id="gola"></div>
+              <h1>INNOVATIVE</h1>
+              <div id="gola"></div>
+              <h1>RELIABLE</h1>
+              <div id="gola"></div>
+          </div>
+          <div class="con">
+              <h1>EFFICIENT</h1>
+              <div id="gola"></div>
+              <h1>INNOVATIVE</h1>
+              <div id="gola"></div>
+              <h1>RELIABLE</h1>
+              <div id="gola"></div>
           </div>
       </div>
-    </section>
-    <!-- ABOUT US END -->
+      <div id="page2-bottom">
+          <h1>We are a group of design- driven, goal-focused innovators and producers who are dedicated to elevate Solar PV Design and Engineering Excellence</h1>
+          <div id="bottom-part2">
+              <img src="images/about-us.png"
+                  alt="">
+              <p>PremiumCAD partners with solar installers and contractors in the U.S. to enhance efficiency in Solar Designs 
+                and Engineering Drawings. With extensive experience and in-depth knowledge of AHJ and Utility requirements, we 
+                offer services from sales proposals to permit plans, ensuring adherence to all regulations and quick turnaround times.</p>
+          </div>
+      </div>
+      <div id="gooey">
 
-
-    <!-- OUR VALUES SECTION  -->
-    <section id="values" class="values">
-      <div class="container">
-        <header class="section-header">
-            <h2 class="blue-text" style="font-size: 50px;">Our Values</h2>
-            <p style="font-size: 25px; font-weight: 300;">Designs that Impress, Deliveries that Excel</p>
-        </header>
-        <div class="row">
-            <div class="col-lg-4">
-                <div class="box">
-                  <img src="images/values/v1.png" class="img-fluid" alt="">
-                  <h3> OUR MISSION </h3>
-                  <p style="font-size: 18px; font-weight: 400;">
-                    At PremiumCAD, our unwavering mission is to establish ourselves as the industry's premier provider of high-quality CAD and GIS engineering designs. 
-                    We are committed to delivering exceptional value to our esteemed clients by offering scalable, timely solutions with agreed-upon quality SLAs. 
-                    We aim to empower businesses with efficient and precise designs that drive their outstanding success through continuous innovation and a customer-centric approach.
-                  </p>
-                </div>
-             </div>
-             <div class="col-lg-4 mt-4 mt-lg-0">
-                <div class="box">
-                  <img src="images/values/v2.png" class="img-fluid" alt="">
-                  <h3> OUR VISION </h3>
-                  <p style="font-size: 18px; font-weight: 400;">As a solar-based company operating in the fields of CAD, GIS, telecom, and solar designs, 
-                    our vision is to revolutionize the industry with our expertise and commitment to excellence. 
-                    We aspire to be the preferred outsourcing partner by offering flexible and reliable solutions 
-                    that give our clients a competitive edge. By fostering partnerships, embracing technological advancements, 
-                    and nurturing talent, we envision a future where sustainable designs meet timely deliveries.</p>
-                </div>
-              </div>
-                <div class="col-lg-4 mt-4 mt-lg-0">
-                  <div class="box">
-                    <img src="images/values/v3.png" class="img-fluid" alt="">
-                    <h3> OUR BELIEVES </h3>
-                    <p style="font-size: 18px; font-weight: 400;">At PremiumCAD, we believe that quality is not just a goal but a continuous journey. 
-                      We are driven by a passion for precision and timely delivery, ensuring that our clients 
-                      receive exceptional designs that meet their requirements. We are committed to a process-oriented approach,
-                       embracing quality management systems and incorporating client feedback for continual improvement. 
-                       Our dedicated team strives to exceed expectations 
-                       and create long-lasting partnerships with our clients.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- OUR VALUES END -->
-
+      </div>
+  </div>
 
     <!-- COUNTER SECTION-->
     <section class="counts">
@@ -200,8 +185,8 @@
   <!-- OUR SERVICES SECTION -->
     <section id="services" class="services">
     <header class="section-header">
-      <h2 class="blue-text heading" style="font-size: 50px;">Multi-Specialists</h2>
-      <p class="sub-heading" style="font-size: 25px;">Versatile Expertise for a Multitude of Needs</p>
+      <h2 class="blue-text heading" style="font-size: 4vw;">Multi-Specialists</h2>
+      <p class="sub-heading" style="font-size: 1.5vw">Versatile Expertise for a Multitude of Needs</p>
     </header>
     <div class="row">
       <div class="column">
@@ -430,6 +415,11 @@
     </footer>
   </section>
   <!-- FOOTER END -->
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
 
 
 

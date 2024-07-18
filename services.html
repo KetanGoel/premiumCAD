@@ -30,6 +30,7 @@
     <link rel="icon" type="image/x-icon" href="images/sq_logo.ico">
 
     <!-- CSS FILE -->
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" type="text/css" href="css/services.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -53,24 +54,60 @@
   <nav>
     <label class="logo">
       <img class="original-logo" src="images/Logo_001-removebg-preview.png" alt="PremiumCAD">
-      <img class="alternate-logo" src="images/invertedlogo.jpg" alt="PremiumCAD">
+      <img class="alternate-logo" src="images/logo_mini.png" alt="PremiumCAD">
     </label>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li class="dropdown">
         <a class="active">Services</a>
+        <ul class="dropdown-content">
+          <li class="dropdown-part">
+            <a href="services/cadservices.html">CAD Services</a>
+            <ul class="sub-dropdown">
+              <li><a href="services/cadservices.html#one">2D/3D Drafting</a></li>
+              <li><a href="services/cadservices.html#two">Engineering Drawings</a></li>
+              <li><a href="services/cadservices.html#three">BIM</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="services/solardesign.html">Solar Designs</a>
+            <ul class="sub-dropdown">
+              <li><a href="services/solardesign.html#one">Residential Drawings</a></li>
+              <li><a href="services/solardesign.html#two">Commercial Designs</a></li>
+              <li><a href="services/solardesign.html#three">Reviews and Stamps</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="services/gisservices.html">GIS Solutions</a>
+            <ul class="sub-dropdown">
+              <li><a href="services/gisservices.html#one">Utility Mapping</a></li>
+              <li><a href="services/gisservices.html#two">GIS Mapping</a></li>
+              <li><a href="services/gisservices.html#three">Georeferencing</a></li>
+            </ul>
+          </li>
+          <li class="dropdown-part">
+            <a href="services/telecomservices.html">Telecom Services</a>
+            <ul class="sub-dropdown">
+              <li><a href="services/telecomservices.html#one">Small Cell/5G Drafting</a></li>
+              <li><a href="telecom-service2.html#two">Construction Drawings</a></li>
+              <li><a href="telecom-service3.html#three">FTTx Network Design</a></li>
+            </ul>
+          </li>
+        </ul>
       </li>
-      <li><a href="pathways.html">Pathways</a></li>
+      
+      <li><a href="pathways.html">Process</a></li>
+      <li><a href="career.html">Career</a></li>
       <li><a href="blog.html">Premium Blog</a></li>
-      <li><a href="services.html#getintouch">Contact Us</a></li>
+      <li><a href="index.html#getintouch">Contact Us</a></li>
     </ul>
     <label id="icon">
       <i class="fa-solid fa-bars"></i>
     </label>
   </nav>
 
-  <section class="servicebanner"></section>
+  <div id="service_banner"></div>
 
   <section>
     <div class="row gy-4">

@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/pathways.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="icon" type="image/x-icon" href="images/sq_logo.ico">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" 
         rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
     <!-- Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -31,7 +37,7 @@
   <nav>
     <label class="logo">
       <img class="original-logo" src="images/Logo_001-removebg-preview.png" alt="PremiumCAD">
-      <img class="alternate-logo" src="images/invertedlogo.jpg" alt="PremiumCAD">
+      <img class="alternate-logo" src="images/logo_mini.png" alt="PremiumCAD">
     </label>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -40,22 +46,44 @@
         <a href="services.html">Services</a>
         <ul class="dropdown-content">
           <li class="dropdown-part">
-            <a href="services.html#cad-services">CAD Services</a>
+            <a href="services/cadservices.html">CAD Services</a>
+            <ul class="sub-dropdown">
+              <li><a href="services/cadservices.html#one">2D/3D Drafting</a></li>
+              <li><a href="services/cadservices.html#two">Engineering Drawings</a></li>
+              <li><a href="services/cadservices.html#three">BIM</a></li>
+            </ul>
           </li>
           <li class="dropdown-part">
-            <a href="services.html#solar-services">Solar Designs</a>
+            <a href="services/solardesign.html">Solar Designs</a>
+            <ul class="sub-dropdown">
+              <li><a href="services/solardesign.html#one">Residential Drawings</a></li>
+              <li><a href="services/solardesign.html#two">Commercial Designs</a></li>
+              <li><a href="services/solardesign.html#three">Reviews and Stamps</a></li>
+            </ul>
           </li>
           <li class="dropdown-part">
-            <a href="services.html#gis-services">GIS Solutions</a>
+            <a href="services/gisservices.html">GIS Solutions</a>
+            <ul class="sub-dropdown">
+              <li><a href="services/gisservices.html#one">Utility Mapping</a></li>
+              <li><a href="services/gisservices.html#two">GIS Mapping</a></li>
+              <li><a href="services/gisservices.html#three">Georeferencing</a></li>
+            </ul>
           </li>
           <li class="dropdown-part">
-            <a href="services.html#telecom-services">Telecom Services</a>
+            <a href="services/telecomservices.html">Telecom Services</a>
+            <ul class="sub-dropdown">
+              <li><a href="services/telecomservices.html#one">Small Cell/5G Drafting</a></li>
+              <li><a href="telecom-service2.html#two">Construction Drawings</a></li>
+              <li><a href="telecom-service3.html#three">FTTx Network Design</a></li>
+            </ul>
           </li>
         </ul>
       </li>
-      <li><a class="active">Pathways</a></li>
+      
+      <li><a class="active">Process</a></li>
+      <li><a href="career.html">Career</a></li>
       <li><a href="blog.html">Premium Blog</a></li>
-      <li><a href="index.html#getintouch">Contact Us</a></li>
+      <li><a href="pathways.html#getintouch">Contact Us</a></li>
     </ul>
     <label id="icon">
       <i class="fa-solid fa-bars"></i>
@@ -64,7 +92,7 @@
 
 
   <!-- Baanner -->
-  <section class="pathwaysbanner"></section>
+  <div id="process_banner"></div>
   <!-- End Banner -->
 
   <!-- End banner -->
